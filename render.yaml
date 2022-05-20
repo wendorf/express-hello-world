@@ -2,6 +2,6 @@ services:
 - type: web
   name: express
   env: node
-  plan: free
+  plan: starter
   buildCommand: yarn
   startCommand: node app.js
