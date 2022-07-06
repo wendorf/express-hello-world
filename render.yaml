@@ -5,4 +5,4 @@ services:
   plan: starter
   buildCommand: yarn
   startCommand: node app.js
-  rootDir: root-dir-two
+  rootDir: root-dir-three
