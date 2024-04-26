@@ -9,8 +9,3 @@ services:
     name: My Disk
     mountPath: /var/data
     sizeGB: 1
-  scaling:
-    minInstances: 1         # Required
-    maxInstances: 3         # Required
-    targetMemoryPercent: 60 # Optional if targetCPUPercent is set (valid: 1-90)
-    targetCPUPercent: 60    # Optional if targetMemory is set (valid: 1-90)
