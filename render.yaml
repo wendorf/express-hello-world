@@ -3,6 +3,9 @@ services:
   name: express
   env: node
   plan: starter
-  buildCommand: yarn
+  buildCommand: yarn --frozen-lockfile install
   startCommand: node app.js
-  rootDir: root-dir-three
+  disk:
+    name: My Disk
+    mountPath: /var/data
+    sizeGB: 1
