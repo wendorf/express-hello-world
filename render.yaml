@@ -1,11 +1,13 @@
 services:
-- type: web
-  name: express
-  env: node
-  plan: starter
-  buildCommand: yarn --frozen-lockfile install
-  startCommand: node app.js
-  disk:
-    name: My Disk
-    mountPath: /var/data
-    sizeGB: 1
+    - type: web
+      name: express
+      runtime: node
+      plan: starter
+      buildCommand: yarn --frozen-lockfile install
+      startCommand: node app.js
+      disk:
+        name: My Disk
+        mountPath: /var/data
+        sizeGB: 1
+      rootDir: first time content change
+version: ""
