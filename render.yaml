@@ -1,3 +1,5 @@
+#!STRICT-MODE
+
 services:
     - type: web
       name: express
