@@ -11,5 +11,5 @@ services:
         name: My Disk
         mountPath: /var/data
         sizeGB: 1
-      rootDir: carrot-atlas
+      rootDir: mushroom-atlas
 version: ""
