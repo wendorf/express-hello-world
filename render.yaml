@@ -9,5 +9,5 @@ services:
         name: My Disk
         mountPath: /var/data
         sizeGB: 1
-      rootDir: lemme-root-dir
+      rootDir: lemme-root-dir-thirty
 version: ""
