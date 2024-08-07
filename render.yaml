@@ -1,5 +1,4 @@
 #!STRICT-MODE
-
 services:
     - type: web
       name: express
@@ -11,5 +10,5 @@ services:
         name: My Disk
         mountPath: /var/data
         sizeGB: 1
-      rootDir: carrot-atlas
+      rootDir: whatever-atlas
 version: ""
