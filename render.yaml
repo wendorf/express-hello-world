@@ -7,7 +7,7 @@ services:
       startCommand: node app.js
       pullRequestPreviewsEnabled: true
       previews:
-          generation: "off"
+          generation: off
       disk:
         name: My Disk
         mountPath: /var/data
