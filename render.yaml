@@ -1,4 +1,4 @@
-https://github.com/wendorf/express-hello-world/tree/masterservices:
+services:
     - type: web
       name: express
       runtime: node
