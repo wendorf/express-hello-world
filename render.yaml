@@ -5,7 +5,7 @@ services:
       plan: starter
       buildCommand: yarn --frozen-lockfile install
       startCommand: node app.js
-      pullRequestPreviewsEnabled: false
+      pullRequestPreviewsEnabled: true
       disk:
         name: My Disk
         mountPath: /var/data
