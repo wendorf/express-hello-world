@@ -1,6 +1,5 @@
 previews:
-    generation: manual
-previewsEnabled: true
+    generation: shmanual
 services:
     - type: web
       name: express
