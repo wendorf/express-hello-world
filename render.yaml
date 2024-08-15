@@ -1,6 +1,6 @@
 previews:
     generation: manual
-pullRequestPreviewsEnabled: true
+previewsEnabled: true
 services:
     - type: web
       name: express
