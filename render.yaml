@@ -1,4 +1,5 @@
-previewsEnabled: true
+previews:
+    generation: manual
 pullRequestPreviewsEnabled: true
 services:
     - type: web
