@@ -1,3 +1,5 @@
+previewsEnabled: true
+pullRequestPreviewsEnabled: true
 services:
     - type: web
       name: express
