@@ -1,6 +1,7 @@
 previews:
     generation: manual
     whatever: not a property
+    expireAfterDays: 5
 services:
     - type: web
       name: express
@@ -10,6 +11,9 @@ services:
       buildCommand: yarn --frozen-lockfile install
       startCommand: node app.js
       pullRequestPreviewsEnabled: true
+      previews:
+          generation: automatic
+          expireAfterDays: 7
       disk:
         name: My Disk
         mountPath: /var/data
