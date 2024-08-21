@@ -1,9 +1,11 @@
 previews:
-    generation: shmanual
+    generation: manual
+    whatever: not a property
 services:
     - type: web
       name: express
       runtime: node
+      also: not-a-property
       plan: starter
       buildCommand: yarn --frozen-lockfile install
       startCommand: node app.js
