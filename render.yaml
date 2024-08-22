@@ -1,12 +1,10 @@
 previews:
     generation: manual
-    whatever: not a property
     expireAfterDays: 5
 services:
     - type: web
       name: express
       runtime: node
-      also: not-a-property
       plan: starter
       buildCommand: yarn --frozen-lockfile install
       startCommand: node app.js
