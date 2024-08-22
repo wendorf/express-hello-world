@@ -13,7 +13,7 @@ services:
       pullRequestPreviewsEnabled: true
       previews:
           generation: automatic
-          expireAfterDays: 7
+          expireAfterDays: 6
       disk:
         name: My Disk
         mountPath: /var/data
