@@ -1,6 +1,5 @@
 previews:
     generation: manual
-    expireAfterDays: 5
 services:
     - type: web
       name: express
@@ -11,7 +10,6 @@ services:
       pullRequestPreviewsEnabled: true
       previews:
           generation: automatic
-          expireAfterDays: 6
       disk:
         name: My Disk
         mountPath: /var/data
