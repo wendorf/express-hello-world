@@ -1,5 +1,3 @@
-previews:
-    generation: automatic
 services:
     - type: web
       name: express
@@ -7,6 +5,8 @@ services:
       plan: starter
       buildCommand: yarn --frozen-lockfile install
       startCommand: node app.js
+      previews:
+          generation: automatic
       disk:
         name: My Disk
         mountPath: /var/data
