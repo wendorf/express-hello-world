@@ -1,15 +1,76 @@
+previews:
+  generation: automatic
 services:
+- type: web
+  name: root express
+  runtime: node
+  plan: starter
+  buildCommand: yarn --frozen-lockfile install
+  startCommand: "node app.js --title 'root title'"
+  envVars:
+  - key: SUBTITLE
+    value: root subtitle
+    previewValue: root preview subtitle
+  - fromGroup: root group
+- type: keyvalue
+  name: root keyvalue
+  ipAllowList: []
+databases:
+- name: root postgres
+envVarGroups:
+- name: root group
+  envVars:
+  - key: SUBTITLE_TWO
+    value: root group subtitle two
+    previewValue: root group preview subtitle two
+ungrouped:
+  services:
+  - type: web
+    name: ungrouped express
+    runtime: node
+    plan: starter
+    buildCommand: yarn --frozen-lockfile install
+    startCommand: "node app.js --title 'ungrouped title'"
+    envVars:
+    - key: SUBTITLE
+      value: ungrouped subtitle
+      previewValue: ungrouped preview subtitle
+    - fromGroup: ungrouped group
+  - type: keyvalue
+    name: ungrouped keyvalue
+    ipAllowList: []
+  databases:
+  - name: ungrouped postgres
+  envVarGroups:
+  - name: ungrouped group
+    envVars:
+    - key: SUBTITLE_TWO
+      value: ungrouped group subtitle two
+      previewValue: ungrouped group preview subtitle two
+projects:
+- name: preview-testing
+  environments:
+  - name: preview-testing
+    services:
     - type: web
-      name: express
+      name: environment express
       runtime: node
       plan: starter
       buildCommand: yarn --frozen-lockfile install
-      startCommand: node app.js
-      previews:
-          generation: automatic
-      disk:
-        name: My Disk
-        mountPath: /var/data
-        sizeGB: 1
-      rootDir: carrot-atlas
-version: ""
+      startCommand: "node app.js --title 'environment title'"
+      envVars:
+      - key: SUBTITLE
+        value: environment subtitle
+        previewValue: environment preview subtitle
+      - fromGroup: environment group
+    - type: keyvalue
+      name: environment keyvalue
+      ipAllowList: [ ]
+    databases:
+    - name: environment postgres
+    envVarGroups:
+    - name: environment group
+      envVars:
+      - key: SUBTITLE_TWO
+        value: environment group subtitle two
+        previewValue: environment group preview subtitle two

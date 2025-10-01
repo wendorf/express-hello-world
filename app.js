@@ -1,11 +1,19 @@
 const express = require("express");
 const app = express();
-const port = 3001;
+const port = 10000;
 
 app.get("/", (req, res) => res.type('html').send(html));
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`));
 
+let title = 'Default Title';
+const args = process.argv.slice(2); // ['--title', 'hello']
+const titleIndex = args.indexOf('--title');
+if (titleIndex !== -1 && args[titleIndex + 1]) {
+    title = args[titleIndex + 1];
+}
+const subtitle = process.env.SUBTITLE || 'Default Subtitle';
+const subtitleTwo = process.env.SUBTITLE_TWO || 'Default Subtitle Two';
 
 const html = `
 <!DOCTYPE html>
@@ -52,7 +60,9 @@ const html = `
   </head>
   <body>
     <section>
-      Hello from Render fork!
+        <div>${title}</div>
+        <div>${subtitle}</div>
+        <div>${subtitleTwo}</div>
     </section>
   </body>
 </html>
