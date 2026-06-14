@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DELAY=${SYNTHETIC_BUILD_DELAY:-180}
+DELAY=${SYNTHETIC_BUILD_DELAY:-185}
 
 RUN_ID=$(LC_ALL=C tr -dc 'a-zA-Z0-9' </dev/urandom | head -c 6)
 
