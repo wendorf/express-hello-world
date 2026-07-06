@@ -13,7 +13,7 @@ if (titleIndex !== -1 && args[titleIndex + 1]) {
     title = args[titleIndex + 1];
 }
 const subtitle = process.env.SUBTITLE || 'Default Subtitle';
-const subtitleTwo = process.env.SUBTITLE_TWO || 'Default Subtitle Two';
+const subtitleTwo = process.env.SUBTITLE_TWO || 'Default Subtitle Two: An Update';
 
 const html = `
 <!DOCTYPE html>
