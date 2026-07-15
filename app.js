@@ -60,7 +60,7 @@ const html = `
   </head>
   <body>
     <section>
-        <div>${title}: The Title</div>
+        <div>${title}: The Title Two</div>
         <div>${subtitle}</div>
         <div>${subtitleTwo}</div>
     </section>
